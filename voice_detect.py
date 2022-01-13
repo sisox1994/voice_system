@@ -7,6 +7,7 @@ import os
 import requests
 #Fs81Kd
 
+#這個版本使用chromedriver 97.0.4692.71 下載:https://chromedriver.storage.googleapis.com/index.html?path=97.0.4692.71/
 #Windows版本  請下載對應版本的chrome driver 放在C:/
 CHROMEDRIVER_PATH = 'C:/chromedriver.exe'
 
