@@ -7,8 +7,8 @@ import os
 import requests
 #Fs81Kd
 
-#Windows版本  請下載對應版本的chrome driver 放在C:/
-CHROMEDRIVER_PATH = 'C:/chromedriver.exe'
+#Linux版本  請下載對應版本的chrome driver 放在/usr/bin/路徑 
+CHROMEDRIVER_PATH = '/usr/bin/chromedriver'
 
 options = webdriver.ChromeOptions()
 options.add_argument("--disable-infobars")     #不顯示受自動軟體控制
