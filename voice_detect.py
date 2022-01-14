@@ -7,6 +7,8 @@ import os
 import requests
 #Fs81Kd
 
+
+#好棒棒
 #這個版本就加個註解而已拉
 #Linux版本  請下載對應版本的chrome driver 放在/usr/bin/路徑 
 CHROMEDRIVER_PATH = '/usr/bin/chromedriver'
