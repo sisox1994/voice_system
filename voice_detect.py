@@ -6,6 +6,7 @@ import time
 import os
 import requests
 #Fs81Kd
+
 #XDDD 進版測試 8 8 8 
 #這個版本使用chromedriver 97.0.4692.71 下載:https://chromedriver.storage.googleapis.com/index.html?path=97.0.4692.71/
 #Windows版本  請下載對應版本的chrome driver 放在C:/
@@ -14,7 +15,8 @@ CHROMEDRIVER_PATH = 'C:/chromedriver.exe'
 options = webdriver.ChromeOptions()
 options.add_argument("--disable-infobars")     #不顯示受自動軟體控制
 options.add_argument("--window-size=800,600")  #設定窗大小
-options.add_argument('--headless')             #無頭模式 不顯示chrome視窗在背景爬蟲 
+#後來發現無頭模式會無法偵測麥克風訊號
+#options.add_argument('--headless')             #無頭模式 不顯示chrome視窗在背景爬蟲 
 options.add_argument('--disable-gpu')          #關閉Chrome GPU加速
 
 #賦予chrome driver 麥克風,鏡頭,位置,通知 權限
