@@ -16,7 +16,8 @@ CHROMEDRIVER_PATH = '/usr/bin/chromedriver'
 options = webdriver.ChromeOptions()
 options.add_argument("--disable-infobars")     #不顯示受自動軟體控制
 options.add_argument("--window-size=800,600")  #設定窗大小
-options.add_argument('--headless')             #無頭模式 不顯示chrome視窗在背景爬蟲 
+#後來發現無頭模式會無法偵測麥克風訊號
+#options.add_argument('--headless')             #無頭模式 不顯示chrome視窗在背景爬蟲 
 options.add_argument('--disable-gpu')          #關閉Chrome GPU加速
 
 #賦予chrome driver 麥克風,鏡頭,位置,通知 權限
